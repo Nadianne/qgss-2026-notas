@@ -50,7 +50,7 @@ Aqui estão organizados:
 - laboratórios;
 - referências úteis.
 
-## 📊 Progresso geral
+## Progresso geral
 
 ### Anotações
 
