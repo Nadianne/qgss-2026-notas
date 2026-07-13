@@ -673,7 +673,7 @@ No Algoritmo de Deutsch-Jozsa:
 
 ---
 ## No fim da aula foi lançado o seguinte questuinamento:
-# Como escalar para milhões ou bilhões de operações?
+### Como escalar para milhões ou bilhões de operações?
 
 Os computadores quânticos atuais ainda possuem qubits físicos sujeitos a ruído.
 
