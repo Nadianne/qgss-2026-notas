@@ -180,12 +180,7 @@ $$
 
 Considere o seguinte estado quântico:
 
-$$
-|\psi\rangle =
-\frac{\sqrt{3}}{2}|0\rangle
--
-\frac{1}{2}i|1\rangle
-$$
+$$ |\psi\rangle = \frac{\sqrt{3}}{2}|0\rangle - \frac{1}{2}i|1\rangle $$
 
 Podemos identificar:
 
