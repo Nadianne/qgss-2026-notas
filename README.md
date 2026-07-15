@@ -65,16 +65,10 @@ Aqui estão organizados:
 - Dia 9 — Otimização
 - Dia 10 — Encerramento
 
-### Laboratórios
+### Laboratórios (em breve)
 
 - Lab 1
 - Lab 2
 - Lab 3
 - Lab 4
-### Workshops
-
-- Workshop 1 — Why Does Quantum Computing Seem Scary?
-- Workshop 2 — How to Use GitHub
-- Workshop 3 — How to Read an Academic Paper
-- Workshop 4 — From Coffees to Contracts: How to Network
 
