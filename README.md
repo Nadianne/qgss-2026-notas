@@ -54,8 +54,8 @@ Aqui estão organizados:
 
 ### Anotações
 
-- [Dia 1 — Introdução à computação quântica](anotacoes/dia-01-introducao.md)
-- Dia 2 — Mecânica quântica
+- [Dia 1 — Introdução à computação quântica](anotacoes/dia-01-introducao.md) 
+- [Dia 2 —  Mecânica quântica](anotacoes/dia-02-mecanica-quantica.md)
 - Dia 3 — Programação quântica
 - Dia 4 — Emaranhamento
 - Dia 5 — Ruído e hardware
