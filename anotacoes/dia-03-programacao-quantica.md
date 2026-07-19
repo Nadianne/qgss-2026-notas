@@ -416,37 +416,19 @@ q1 = alvo
 
 Considere dois qubits inicialmente no estado:
 
-$$
-|00\rangle
-
-$$
+$$|00\rangle$$
 
 Aplicamos uma porta Hadamard no primeiro qubit:
 
-$$
-|00\rangle
-\xrightarrow{H\otimes I}
-\frac{|00\rangle+|10\rangle}{\sqrt{2}}
-
-$$
+$$|00\rangle \xrightarrow{H \otimes I} \frac{|00\rangle+|10\rangle}{\sqrt{2}}$$
 
 Depois, aplicamos uma CNOT:
 
-$$
-\frac{|00\rangle+|10\rangle}{\sqrt{2}}
-\xrightarrow{CX}
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-
-$$
+$$\frac{|00\rangle+|10\rangle}{\sqrt{2}} \xrightarrow{CX} \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 O estado final é:
 
-$$
-|\Phi^+\rangle
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-
-$$
+$$|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 Esse é um estado de Bell emaranhado.
 
@@ -458,43 +440,21 @@ Ao medir:
 ---
 
 ## Porta CZ
-
-A porta Controlled-Z modifica a fase apenas quando os dois qubits estão no estado $1$.
+A porta Controlled-Z modifica a fase apenas quando os dois qubits estão no estado $|11\rangle$.
 
 As transformações são:
 
-$$
-|00\rangle\rightarrow|00\rangle
+$$|00\rangle \rightarrow |00\rangle$$
 
-$$
+$$|01\rangle \rightarrow |01\rangle$$
 
-$$
-|01\rangle\rightarrow|01\rangle
+$$|10\rangle \rightarrow |10\rangle$$
 
-$$
-
-$$
-|10\rangle\rightarrow|10\rangle
-
-$$
-
-$$
-|11\rangle\rightarrow-|11\rangle
-
-$$
+$$|11\rangle \rightarrow -|11\rangle$$
 
 Sua matriz é:
 
-$$
-CZ=
-\begin{pmatrix}
-1 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & -1
-\end{pmatrix}
-
-$$
+$$CZ = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}$$
 
 A porta CZ é simétrica.
 
