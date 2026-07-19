@@ -49,7 +49,7 @@ Neste quarto dia, compreendi que:
 <p align="center">
   <em>
     Preparação do estado de Bell
-    $|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$,
+    $|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$ ,
     utilizando uma porta Hadamard seguida de uma CNOT.
   </em>
 </p>
@@ -453,11 +453,7 @@ Bob aplica correções ao seu qubit de acordo com os bits recebidos.
 
 Após a correção, o qubit de Bob passa a estar em:
 
-$$
-|\psi\rangle
-=
-\alpha|0\rangle+\beta|1\rangle
-$$
+$$|\psi\rangle=\alpha|0\rangle+\beta|1\rangle$$
 
 ---
 
