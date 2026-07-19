@@ -59,11 +59,7 @@ Neste terceiro dia, compreendi que:
 
 A **Esfera de Bloch** é uma representação geométrica utilizada para visualizar o estado de um único qubit.
 
-Um bit clássico pode assumir apenas dois valores:
-
-```text
-0 ou 1
-```
+Um bit clássico pode assumir apenas dois valores: **0 ou 1**.
 
 Um qubit pode estar em uma superposição:
 
@@ -73,12 +69,14 @@ $$
 \alpha|0\rangle
 +
 \beta|1\rangle
+
 $$
 
 com:
 
 $$
 |\alpha|^2+|\beta|^2=1
+
 $$
 
 A esfera funciona como um mapa tridimensional do estado do qubit.
@@ -112,6 +110,7 @@ $$
 +
 e^{i\phi}
 \sin\left(\frac{\theta}{2}\right)|1\rangle
+
 $$
 
 Os ângulos funcionam como coordenadas geográficas:
@@ -131,6 +130,7 @@ $$
 P(0)
 =
 \cos^2\left(\frac{\theta}{2}\right)
+
 $$
 
 A probabilidade de medir $1$ é:
@@ -139,6 +139,7 @@ $$
 P(1)
 =
 \sin^2\left(\frac{\theta}{2}\right)
+
 $$
 
 O ângulo $\phi$ não altera imediatamente essas probabilidades quando medimos na base computacional.
@@ -192,16 +193,19 @@ X=
 0 & 1 \\
 1 & 0
 \end{pmatrix}
+
 $$
 
 Ela troca os estados da base computacional:
 
 $$
 X|0\rangle=|1\rangle
+
 $$
 
 $$
 X|1\rangle=|0\rangle
+
 $$
 
 Na Esfera de Bloch, corresponde a uma rotação de $180^\circ$ em torno do eixo $X$.
@@ -220,18 +224,21 @@ Z=
 1 & 0 \\
 0 & -1
 \end{pmatrix}
+
 $$
 
 Ela mantém $|0\rangle$ inalterado:
 
 $$
 Z|0\rangle=|0\rangle
+
 $$
 
 E altera o sinal do estado $|1\rangle$:
 
 $$
 Z|1\rangle=-|1\rangle
+
 $$
 
 A porta $Z$ não troca diretamente as probabilidades de medir $0$ ou $1$.
@@ -242,6 +249,7 @@ Por exemplo:
 
 $$
 Z|+\rangle=|-\rangle
+
 $$
 
 Na Esfera de Bloch, ela representa uma rotação de $180^\circ$ em torno do eixo $Z$.
@@ -258,16 +266,19 @@ Y=
 0 & -i \\
 i & 0
 \end{pmatrix}
+
 $$
 
 Ela atua como:
 
 $$
 Y|0\rangle=i|1\rangle
+
 $$
 
 $$
 Y|1\rangle=-i|0\rangle
+
 $$
 
 A porta $Y$ altera tanto o estado da base computacional quanto a fase.
@@ -287,6 +298,7 @@ H=
 1 & 1 \\
 1 & -1
 \end{pmatrix}
+
 $$
 
 Aplicada ao estado $|0\rangle$:
@@ -297,6 +309,7 @@ H|0\rangle
 \frac{|0\rangle+|1\rangle}{\sqrt{2}}
 =
 |+\rangle
+
 $$
 
 Aplicada ao estado $|1\rangle$:
@@ -307,16 +320,19 @@ H|1\rangle
 \frac{|0\rangle-|1\rangle}{\sqrt{2}}
 =
 |-\rangle
+
 $$
 
 Nos dois casos, as probabilidades de medição são:
 
 $$
 P(0)=\frac{1}{2}
+
 $$
 
 $$
 P(1)=\frac{1}{2}
+
 $$
 
 A Hadamard é frequentemente utilizada para criar uma superposição equilibrada.
@@ -333,18 +349,21 @@ S=
 1 & 0 \\
 0 & i
 \end{pmatrix}
+
 $$
 
 Ela realiza uma rotação de fase de:
 
 $$
 90^\circ
+
 $$
 
 ou:
 
 $$
 \frac{\pi}{2}
+
 $$
 
 Ela deixa $|0\rangle$ inalterado e multiplica o componente $|1\rangle$ por $i$.
@@ -353,6 +372,7 @@ Também vale:
 
 $$
 S^2=Z
+
 $$
 
 ---
@@ -367,18 +387,21 @@ T=
 1 & 0 \\
 0 & e^{i\pi/4}
 \end{pmatrix}
+
 $$
 
 Ela realiza uma rotação de fase de:
 
 $$
 45^\circ
+
 $$
 
 ou:
 
 $$
 \frac{\pi}{4}
+
 $$
 
 A porta $T$ é importante porque não pertence ao grupo de Clifford.
@@ -430,18 +453,22 @@ As transformações são:
 
 $$
 |00\rangle\rightarrow|00\rangle
+
 $$
 
 $$
 |01\rangle\rightarrow|01\rangle
+
 $$
 
 $$
 |10\rangle\rightarrow|11\rangle
+
 $$
 
 $$
 |11\rangle\rightarrow|10\rangle
+
 $$
 
 Sua matriz é:
@@ -454,6 +481,7 @@ CX=
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
+
 $$
 
 ---
@@ -492,6 +520,7 @@ Considere dois qubits inicialmente no estado:
 
 $$
 |00\rangle
+
 $$
 
 Aplicamos uma porta Hadamard no primeiro qubit:
@@ -500,6 +529,7 @@ $$
 |00\rangle
 \xrightarrow{H\otimes I}
 \frac{|00\rangle+|10\rangle}{\sqrt{2}}
+
 $$
 
 Depois, aplicamos uma CNOT:
@@ -508,6 +538,7 @@ $$
 \frac{|00\rangle+|10\rangle}{\sqrt{2}}
 \xrightarrow{CX}
 \frac{|00\rangle+|11\rangle}{\sqrt{2}}
+
 $$
 
 O estado final é:
@@ -516,6 +547,7 @@ $$
 |\Phi^+\rangle
 =
 \frac{|00\rangle+|11\rangle}{\sqrt{2}}
+
 $$
 
 Esse é um estado de Bell emaranhado.
@@ -535,18 +567,22 @@ As transformações são:
 
 $$
 |00\rangle\rightarrow|00\rangle
+
 $$
 
 $$
 |01\rangle\rightarrow|01\rangle
+
 $$
 
 $$
 |10\rangle\rightarrow|10\rangle
+
 $$
 
 $$
 |11\rangle\rightarrow-|11\rangle
+
 $$
 
 Sua matriz é:
@@ -559,6 +595,7 @@ CZ=
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & -1
 \end{pmatrix}
+
 $$
 
 A porta CZ é simétrica.
@@ -581,6 +618,7 @@ Na computação quântica, uma combinação universal conhecida é:
 
 $$
 \{H,T,CX\}
+
 $$
 
 Isso significa que qualquer circuito quântico pode ser decomposto ou aproximado utilizando sequências dessas portas.
@@ -608,6 +646,7 @@ Um conjunto comum de portas Clifford é:
 
 $$
 \{H,S,CX\}
+
 $$
 
 Essas portas conseguem produzir:
@@ -646,22 +685,26 @@ Ao combinar:
 
 $$
 H
+
 $$
 
 $$
 T
+
 $$
 
 e:
 
 $$
 CX
+
 $$
 
 obtemos um conjunto universal:
 
 $$
 \{H,T,CX\}
+
 $$
 
 Assim:
@@ -724,6 +767,7 @@ Ele mede quanto tempo um qubit no estado excitado $|1\rangle$ leva para retornar
 
 $$
 |1\rangle\longrightarrow|0\rangle
+
 $$
 
 Esse processo representa uma perda de energia.
@@ -740,6 +784,7 @@ Por exemplo, um estado como:
 
 $$
 \frac{|0\rangle+|1\rangle}{\sqrt{2}}
+
 $$
 
 pode deixar de produzir interferência corretamente.
@@ -748,6 +793,7 @@ Em geral:
 
 $$
 T_2\leq2T_1
+
 $$
 
 ---
@@ -943,6 +989,7 @@ Para representar exatamente um estado puro de $n$ qubits, são necessárias:
 
 $$
 2^n
+
 $$
 
 amplitudes complexas.
@@ -1008,6 +1055,7 @@ $$
 |a\rangle|b\rangle
 \longrightarrow
 |b\rangle|a\rangle
+
 $$
 
 Por exemplo:
@@ -1016,6 +1064,7 @@ $$
 |10\rangle
 \longrightarrow
 |01\rangle
+
 $$
 
 ---
@@ -1030,6 +1079,7 @@ SWAP(a,b)
 CX(a,b)
 CX(b,a)
 CX(a,b)
+
 $$
 
 A sequência é:
@@ -1048,16 +1098,19 @@ Considere:
 
 $$
 q_0=|1\rangle
+
 $$
 
 $$
 q_1=|0\rangle
+
 $$
 
 O estado inicial é:
 
 $$
 |10\rangle
+
 $$
 
 ### Primeira CNOT
@@ -1066,6 +1119,7 @@ Controle em $q_0$ e alvo em $q_1$:
 
 $$
 |10\rangle\rightarrow|11\rangle
+
 $$
 
 Como o controle é $1$, o alvo é invertido.
@@ -1076,6 +1130,7 @@ Controle em $q_1$ e alvo em $q_0$:
 
 $$
 |11\rangle\rightarrow|01\rangle
+
 $$
 
 Como o controle é $1$, o alvo é invertido.
@@ -1086,6 +1141,7 @@ Controle em $q_0$ e alvo em $q_1$:
 
 $$
 |01\rangle\rightarrow|01\rangle
+
 $$
 
 Como o controle é $0$, nada acontece.
@@ -1094,6 +1150,7 @@ Portanto:
 
 $$
 |10\rangle\rightarrow|01\rangle
+
 $$
 
 Os estados dos qubits foram trocados.
@@ -1167,6 +1224,7 @@ Esse circuito prepara o estado:
 
 $$
 \frac{|00\rangle+|11\rangle}{\sqrt{2}}
+
 $$
 
 Em um simulador ideal, os resultados esperados são principalmente:
@@ -1206,6 +1264,7 @@ Um conjunto universal, como:
 
 $$
 \{H,T,CX\}
+
 $$
 
 permite construir operações quânticas arbitrárias.
