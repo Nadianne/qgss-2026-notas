@@ -36,36 +36,23 @@ Neste quarto dia, compreendi que:
 - o teletransporte é uma base para redes e repetidores quânticos.
 
 ---
-
 # O que é emaranhamento quântico?
 
 O emaranhamento ocorre quando dois ou mais sistemas são descritos por um único estado quântico conjunto que não pode ser separado em estados individuais independentes.
 
 Um estado separável pode ser escrito como:
 
-$$
-|\psi\rangle
-=
-|\phi\rangle\otimes|\chi\rangle
-$$
+$$|1\rangle = |\phi\rangle \otimes |\chi\rangle$$
 
 Em um estado emaranhado, essa decomposição não é possível.
 
 Um exemplo é:
 
-$$
-|\Phi^+\rangle
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 Não existem estados individuais $|\phi\rangle$ e $|\chi\rangle$ capazes de satisfazer:
 
-$$
-|\Phi^+\rangle
-=
-|\phi\rangle\otimes|\chi\rangle
-$$
+$$|\Phi^+\rangle = |\phi\rangle \otimes |\chi\rangle$$
 
 ---
 
@@ -84,16 +71,11 @@ Porém, as luvas já estavam definidas antes da observação.
 A medição apenas revelou uma informação que já existia.
 
 ---
-
 # Correlação quântica
 
 Considere novamente:
 
-$$
-|\Phi^+\rangle
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 Ao medir os dois qubits na base computacional:
 
@@ -108,73 +90,39 @@ Os resultados individuais são aleatórios, mas os resultados conjuntos são per
 
 O estado global é puro e conhecido. Porém, cada qubit isolado é descrito por:
 
-$$
-\rho_A
-=
-\rho_B
-=
-\frac{I}{2}
-$$
+$$\rho_A = \rho_B = \frac{I}{2}$$
 
 Ou seja, cada qubit isolado parece maximamente misto.
 
 ---
-
 # Estados de Bell
 
 Existem quatro estados de Bell:
 
-$$
-|\Phi^+\rangle
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
-$$
-|\Phi^-\rangle
-=
-\frac{|00\rangle-|11\rangle}{\sqrt{2}}
-$$
+$$|\Phi^-\rangle = \frac{|00\rangle-|11\rangle}{\sqrt{2}}$$
 
-$$
-|\Psi^+\rangle
-=
-\frac{|01\rangle+|10\rangle}{\sqrt{2}}
-$$
+$$|\Psi^+\rangle = \frac{|01\rangle+|10\rangle}{\sqrt{2}}$$
 
-$$
-|\Psi^-\rangle
-=
-\frac{|01\rangle-|10\rangle}{\sqrt{2}}
-$$
+$$|\Psi^-\rangle = \frac{|01\rangle-|10\rangle}{\sqrt{2}}$$
 
 Todos são estados de dois qubits maximamente emaranhados.
 
 ---
-
 ## Preparação de $|\Phi^+\rangle$
 
 Começamos com:
 
-$$
-|00\rangle
-$$
+$$|00\rangle$$
 
 Aplicamos uma porta Hadamard no primeiro qubit:
 
-$$
-|00\rangle
-\xrightarrow{H\otimes I}
-\frac{|00\rangle+|10\rangle}{\sqrt{2}}
-$$
+$$|00\rangle \xrightarrow{H\otimes I} \frac{|00\rangle+|10\rangle}{\sqrt{2}}$$
 
 Depois aplicamos uma CNOT:
 
-$$
-\frac{|00\rangle+|10\rangle}{\sqrt{2}}
-\xrightarrow{CX}
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$\frac{|00\rangle+|10\rangle}{\sqrt{2}} \xrightarrow{CX} \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 ---
 
@@ -234,62 +182,35 @@ Horne
 Shimony
 Holt
 ```
-
 Alice escolhe entre duas medições:
 
-$$
-A_0
-\quad\text{e}\quad
-A_1
-$$
+$$A_0 \quad\text{e}\quad A_1$$
 
 Bob escolhe entre:
 
-$$
-B_0
-\quad\text{e}\quad
-B_1
-$$
+$$B_0 \quad\text{e}\quad B_1$$
 
 O parâmetro CHSH é:
 
-$$
-S
-=
-E(A_0,B_0)
-+
-E(A_0,B_1)
-+
-E(A_1,B_0)
--
-E(A_1,B_1)
-$$
+$$S = E(A_0,B_0) + E(A_0,B_1) + E(A_1,B_0) - E(A_1,B_1)$$
 
 Para teorias locais:
 
-$$
-|S|\leq2
-$$
+$$|S|\leq2$$
 
 A mecânica quântica permite:
 
-$$
-|S|\leq2\sqrt{2}
-$$
+$$|S|\leq2\sqrt{2}$$
 
 Como:
 
-$$
-2\sqrt{2}\approx2{,}828
-$$
+$$2\sqrt{2}\approx2{,}828$$
 
 a previsão quântica pode ultrapassar o limite clássico.
 
 Quando um experimento observa:
 
-$$
-|S|>2
-$$
+$$|S|>2$$
 
 as correlações não podem ser explicadas por uma teoria de variáveis ocultas locais.
 
@@ -336,18 +257,13 @@ Essa comparação exige um canal clássico, como:
 Esse canal permanece limitado pela velocidade da luz.
 
 ---
-
 # Teorema da não-clonagem
 
 O teorema da não-clonagem afirma que um estado quântico arbitrário e desconhecido não pode ser copiado perfeitamente.
 
 Não existe uma operação universal capaz de realizar:
 
-$$
-|\psi\rangle|0\rangle
-\longrightarrow
-|\psi\rangle|\psi\rangle
-$$
+$$|\psi\rangle|0\rangle \longrightarrow |\psi\rangle|\psi\rangle$$
 
 para qualquer estado $|\psi\rangle$.
 
@@ -357,43 +273,23 @@ para qualquer estado $|\psi\rangle$.
 
 Suponha uma operação $U$ capaz de copiar:
 
-$$
-U|0\rangle|0\rangle
-=
-|0\rangle|0\rangle
-$$
+$$U|0\rangle|0\rangle = |0\rangle|0\rangle$$
 
 e:
 
-$$
-U|1\rangle|0\rangle
-=
-|1\rangle|1\rangle
-$$
+$$U|1\rangle|0\rangle = |1\rangle|1\rangle$$
 
 Para:
 
-$$
-|+\rangle
-=
-\frac{|0\rangle+|1\rangle}{\sqrt{2}}
-$$
+$$|+\rangle = \frac{|0\rangle+|1\rangle}{\sqrt{2}}$$
 
 a linearidade produziria:
 
-$$
-U|+\rangle|0\rangle
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$U|+\rangle|0\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 Mas uma cópia perfeita seria:
 
-$$
-|+\rangle|+\rangle
-=
-\frac{|00\rangle+|01\rangle+|10\rangle+|11\rangle}{2}
-$$
+$$|+\rangle|+\rangle = \frac{|00\rangle+|01\rangle+|10\rangle+|11\rangle}{2}$$
 
 Como os resultados são diferentes, uma máquina universal de clonagem não pode existir.
 
@@ -426,15 +322,11 @@ Algoritmos quânticos úteis combinam:
 
 O algoritmo de Grover utiliza interferência para reduzir uma busca não estruturada de:
 
-$$
-O(N)
-$$
+$$O(N)$$
 
 para aproximadamente:
 
-$$
-O(\sqrt{N})
-$$
+$$O(\sqrt{N})$$
 
 ---
 
@@ -450,9 +342,6 @@ Ele não transporta:
 - objetos físicos.
 
 O que é reconstruído no destino é o estado quântico original.
-
----
-
 # Configuração do protocolo
 
 O protocolo utiliza três qubits.
@@ -461,11 +350,7 @@ O protocolo utiliza três qubits.
 
 Pertence a Alice e contém o estado desconhecido:
 
-$$
-|\psi\rangle
-=
-\alpha|0\rangle+\beta|1\rangle
-$$
+$$|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$$
 
 ## Qubit $A$
 
@@ -477,11 +362,7 @@ $$
 
 Os qubits $A$ e $B$ são preparados em:
 
-$$
-|\Phi^+\rangle_{AB}
-=
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-$$
+$$|\Phi^+\rangle_{AB} = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
 
 ---
 
