@@ -354,41 +354,32 @@ A porta CX, também chamada de CNOT, possui:
 
 A regra é:
 
-> Se o qubit de controle estiver no estado $1$, o qubit alvo será invertido.
+> Se o qubit de controle estiver no estado 1, o qubit alvo será invertido.
 
 As transformações são:
 
 $$
-|00\rangle\rightarrow|00\rangle
-
+|00\rangle \rightarrow |00\rangle
 $$
-
 $$
-|01\rangle\rightarrow|01\rangle
-
+|01\rangle \rightarrow |01\rangle
 $$
-
 $$
-|10\rangle\rightarrow|11\rangle
-
+|10\rangle \rightarrow |11\rangle
 $$
-
 $$
-|11\rangle\rightarrow|10\rangle
-
+|11\rangle \rightarrow |10\rangle
 $$
 
 Sua matriz é:
 
 $$
-CX=
-\begin{pmatrix}
+CX = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
 \end{pmatrix}
-
 $$
 
 ---
