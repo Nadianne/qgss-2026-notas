@@ -57,7 +57,7 @@ Aqui estão organizados:
 - [Dia 1 — Introdução à computação quântica](anotacoes/dia-01-introducao.md) 
 - [Dia 2 — Mecânica quântica](anotacoes/dia-02-mecanica-quantica.md)
 - [Dia 3 — Programação quântica](anotacoes/dia-03-programacao-quantica.md)
-- Dia 4 — Emaranhamento
+- [Dia 4 — Emaranhamento](anotacoes/dia-04-emaranhamento.md)
 - Dia 5 — Ruído e hardware
 - Dia 6 — Quantum + HPC
 - Dia 7 — Algoritmos e simulação
