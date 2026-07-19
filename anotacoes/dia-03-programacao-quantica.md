@@ -888,6 +888,7 @@ A sequência é[cite: 1]:
 CX do primeiro para o segundo
 CX do segundo para o primeiro
 CX do primeiro para o segundo
+```
 ---
 ## Exemplo passo a passo
 
