@@ -474,12 +474,10 @@ Com um conjunto básico de peças, é possível construir estruturas diferentes 
 
 Na computação quântica, uma combinação universal conhecida é:
 
-$$
-\{H,T,CX\}
-
-$$
+$$\{H, T, CX\}$$
 
 Isso significa que qualquer circuito quântico pode ser decomposto ou aproximado utilizando sequências dessas portas.
+
 
 ---
 
@@ -502,10 +500,7 @@ As portas de dois qubits permitem criar correlações e emaranhamento.
 
 Um conjunto comum de portas Clifford é:
 
-$$
-\{H,S,CX\}
-
-$$
+$$\{H, S, CX\}$$
 
 Essas portas conseguem produzir:
 
@@ -539,38 +534,15 @@ Portanto, para obter computação quântica universal, é necessário adicionar 
 
 A porta $T$ é uma operação não-Clifford.
 
-Ao combinar:
+Ao combinar as portas $H$, $T$ e $CX$, obtemos um conjunto universal[cite: 1]:
 
-$$
-H
-
-$$
-
-$$
-T
-
-$$
-
-e:
-
-$$
-CX
-
-$$
-
-obtemos um conjunto universal:
-
-$$
-\{H,T,CX\}
-
-$$
+$$\{H, T, CX\}$$
 
 Assim:
 
-- $H$, $S$ e $CX$ são Clifford;
-- $T$ é não-Clifford;
-- a inclusão da porta $T$ permite construir circuitos universais.
-
+- $H$, $S$ e $CX$ são Clifford[cite: 1];
+- $T$ é não-Clifford[cite: 1];
+- a inclusão da porta $T$ permite construir circuitos universais[cite: 1].
 ---
 
 ## Custo das portas T
@@ -623,10 +595,7 @@ O $T_1$ é chamado de tempo de relaxamento.
 
 Ele mede quanto tempo um qubit no estado excitado $|1\rangle$ leva para retornar naturalmente ao estado $|0\rangle$.
 
-$$
-|1\rangle\longrightarrow|0\rangle
-
-$$
+$$|1\rangle \longrightarrow |0\rangle$$
 
 Esse processo representa uma perda de energia.
 
