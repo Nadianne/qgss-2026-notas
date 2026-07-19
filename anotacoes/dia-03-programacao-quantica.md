@@ -11,7 +11,6 @@
 Estas anotações foram produzidas a partir do conteúdo apresentado durante a live do **Qiskit Global Summer School 2026**, promovido pela IBM Quantum.
 
 Ou seja, eu só reorganizei os conceitos e reescrevi de acordo com o que compreendi durante a apresentação.
----
 
 ---
 
@@ -65,7 +64,7 @@ Um bit clássico pode assumir apenas dois valores:
 ```text
 0 ou 1
 ```
----
+
 Um qubit pode estar em uma superposição:
 
 $$
@@ -90,13 +89,13 @@ A esfera funciona como um mapa tridimensional do estado do qubit.
 
 Na Esfera de Bloch:
 
-- o polo norte representa o estado \( |0\rangle \);
-- o polo sul representa o estado \( |1\rangle \);
-- os demais pontos representam superposições entre \( |0\rangle \) e \( |1\rangle \).
+- o polo norte representa o estado $|0\rangle$;
+- o polo sul representa o estado $|1\rangle$;
+- os demais pontos representam superposições entre $|0\rangle$ e $|1\rangle$.
 
-Se o estado estiver próximo do polo norte, a probabilidade de medir \(0\) será maior.
+Se o estado estiver próximo do polo norte, a probabilidade de medir $0$ será maior.
 
-Se estiver próximo do polo sul, a probabilidade de medir \(1\) será maior.
+Se estiver próximo do polo sul, a probabilidade de medir $1$ será maior.
 
 No equador, os estados possuem probabilidades iguais de medição na base computacional, embora possam apresentar fases diferentes.
 
@@ -117,16 +116,16 @@ $$
 
 Os ângulos funcionam como coordenadas geográficas:
 
-- \(\theta\) indica a posição entre os polos norte e sul;
-- \(\phi\) indica a posição ao redor do eixo vertical e representa a fase relativa.
+- $\theta$ indica a posição entre os polos norte e sul;
+- $\phi$ indica a posição ao redor do eixo vertical e representa a fase relativa.
 
-Assim, \(\theta\) pode ser comparado à latitude e \(\phi\) à longitude.
+Assim, $\theta$ pode ser comparado à latitude e $\phi$ à longitude.
 
 ---
 
 ## Interpretação das probabilidades
 
-A probabilidade de medir \(0\) é:
+A probabilidade de medir $0$ é:
 
 $$
 P(0)
@@ -134,7 +133,7 @@ P(0)
 \cos^2\left(\frac{\theta}{2}\right)
 $$
 
-A probabilidade de medir \(1\) é:
+A probabilidade de medir $1$ é:
 
 $$
 P(1)
@@ -142,7 +141,7 @@ P(1)
 \sin^2\left(\frac{\theta}{2}\right)
 $$
 
-O ângulo \(\phi\) não altera imediatamente essas probabilidades quando medimos na base computacional.
+O ângulo $\phi$ não altera imediatamente essas probabilidades quando medimos na base computacional.
 
 Porém, ele influencia resultados posteriores quando o circuito produz interferência.
 
@@ -205,7 +204,7 @@ $$
 X|1\rangle=|0\rangle
 $$
 
-Na Esfera de Bloch, corresponde a uma rotação de \(180^\circ\) em torno do eixo \(X\).
+Na Esfera de Bloch, corresponde a uma rotação de $180^\circ$ em torno do eixo $X$.
 
 Ela é semelhante à porta NOT da computação clássica.
 
@@ -223,19 +222,19 @@ Z=
 \end{pmatrix}
 $$
 
-Ela mantém \( |0\rangle \) inalterado:
+Ela mantém $|0\rangle$ inalterado:
 
 $$
 Z|0\rangle=|0\rangle
 $$
 
-E altera o sinal do estado \( |1\rangle \):
+E altera o sinal do estado $|1\rangle$:
 
 $$
 Z|1\rangle=-|1\rangle
 $$
 
-A porta \(Z\) não troca diretamente as probabilidades de medir \(0\) ou \(1\).
+A porta $Z$ não troca diretamente as probabilidades de medir $0$ ou $1$.
 
 Ela modifica a fase relativa do estado.
 
@@ -245,7 +244,7 @@ $$
 Z|+\rangle=|-\rangle
 $$
 
-Na Esfera de Bloch, ela representa uma rotação de \(180^\circ\) em torno do eixo \(Z\).
+Na Esfera de Bloch, ela representa uma rotação de $180^\circ$ em torno do eixo $Z$.
 
 ---
 
@@ -271,9 +270,9 @@ $$
 Y|1\rangle=-i|0\rangle
 $$
 
-A porta \(Y\) altera tanto o estado da base computacional quanto a fase.
+A porta $Y$ altera tanto o estado da base computacional quanto a fase.
 
-Na Esfera de Bloch, corresponde a uma rotação de \(180^\circ\) em torno do eixo \(Y\).
+Na Esfera de Bloch, corresponde a uma rotação de $180^\circ$ em torno do eixo $Y$.
 
 ---
 
@@ -290,7 +289,7 @@ H=
 \end{pmatrix}
 $$
 
-Aplicada ao estado \( |0\rangle \):
+Aplicada ao estado $|0\rangle$:
 
 $$
 H|0\rangle
@@ -300,7 +299,7 @@ H|0\rangle
 |+\rangle
 $$
 
-Aplicada ao estado \( |1\rangle \):
+Aplicada ao estado $|1\rangle$:
 
 $$
 H|1\rangle
@@ -326,7 +325,7 @@ A Hadamard é frequentemente utilizada para criar uma superposição equilibrada
 
 ## Porta S
 
-A porta \(S\) é:
+A porta $S$ é:
 
 $$
 S=
@@ -348,7 +347,7 @@ $$
 \frac{\pi}{2}
 $$
 
-Ela deixa \( |0\rangle \) inalterado e multiplica o componente \( |1\rangle \) por \(i\).
+Ela deixa $|0\rangle$ inalterado e multiplica o componente $|1\rangle$ por $i$.
 
 Também vale:
 
@@ -360,7 +359,7 @@ $$
 
 ## Porta T
 
-A porta \(T\) é:
+A porta $T$ é:
 
 $$
 T=
@@ -382,7 +381,7 @@ $$
 \frac{\pi}{4}
 $$
 
-A porta \(T\) é importante porque não pertence ao grupo de Clifford.
+A porta $T$ é importante porque não pertence ao grupo de Clifford.
 
 ---
 
@@ -390,12 +389,12 @@ A porta \(T\) é importante porque não pertence ao grupo de Clifford.
 
 | Porta | Operação principal | Interpretação |
 |:---:|---|---|
-| \(X\) | Inversão de bit | Troca \( |0\rangle \) e \( |1\rangle \) |
-| \(Y\) | Inversão com fase | Rotação em torno do eixo \(Y\) |
-| \(Z\) | Inversão de fase | Altera o sinal do componente \( |1\rangle \) |
-| \(H\) | Criação de superposição | Produz os estados \( |+\rangle \) e \( |-\rangle \) |
-| \(S\) | Rotação de fase de \(90^\circ\) | Ajuste de fase |
-| \(T\) | Rotação de fase de \(45^\circ\) | Operação não-Clifford |
+| $X$ | Inversão de bit | Troca $|0\rangle$ e $|1\rangle$ |
+| $Y$ | Inversão com fase | Rotação em torno do eixo $Y$ |
+| $Z$ | Inversão de fase | Altera o sinal do componente $|1\rangle$ |
+| $H$ | Criação de superposição | Produz os estados $|+\rangle$ e $|-\rangle$ |
+| $S$ | Rotação de fase de $90^\circ$ | Ajuste de fase |
+| $T$ | Rotação de fase de $45^\circ$ | Operação não-Clifford |
 
 ---
 
@@ -425,7 +424,7 @@ A porta CX, também chamada de CNOT, possui:
 
 A regra é:
 
-> Se o qubit de controle estiver no estado \(1\), o qubit alvo será invertido.
+> Se o qubit de controle estiver no estado $1$, o qubit alvo será invertido.
 
 As transformações são:
 
@@ -523,14 +522,14 @@ Esse é um estado de Bell emaranhado.
 
 Ao medir:
 
-- se o primeiro qubit for \(0\), o segundo também será \(0\);
-- se o primeiro qubit for \(1\), o segundo também será \(1\).
+- se o primeiro qubit for $0$, o segundo também será $0$;
+- se o primeiro qubit for $1$, o segundo também será $1$.
 
 ---
 
 ## Porta CZ
 
-A porta Controlled-Z modifica a fase apenas quando os dois qubits estão no estado \(1\).
+A porta Controlled-Z modifica a fase apenas quando os dois qubits estão no estado $1$.
 
 As transformações são:
 
@@ -641,7 +640,7 @@ Portanto, para obter computação quântica universal, é necessário adicionar 
 
 ## A importância da porta T
 
-A porta \(T\) é uma operação não-Clifford.
+A porta $T$ é uma operação não-Clifford.
 
 Ao combinar:
 
@@ -667,19 +666,19 @@ $$
 
 Assim:
 
-- \(H\), \(S\) e \(CX\) são Clifford;
-- \(T\) é não-Clifford;
-- a inclusão da porta \(T\) permite construir circuitos universais.
+- $H$, $S$ e $CX$ são Clifford;
+- $T$ é não-Clifford;
+- a inclusão da porta $T$ permite construir circuitos universais.
 
 ---
 
 ## Custo das portas T
 
-Em computadores quânticos tolerantes a falhas, as portas \(T\) costumam ser mais caras que as operações Clifford.
+Em computadores quânticos tolerantes a falhas, as portas $T$ costumam ser mais caras que as operações Clifford.
 
 Elas podem exigir procedimentos especiais, como preparação e destilação de estados mágicos.
 
-Por isso, a quantidade de portas \(T\) pode ser utilizada como uma medida do custo de determinados algoritmos quânticos.
+Por isso, a quantidade de portas $T$ pode ser utilizada como uma medida do custo de determinados algoritmos quânticos.
 
 ---
 
@@ -715,13 +714,13 @@ Quando ela se rompe, a informação é perdida ou degradada.
 
 ---
 
-# Tempos \(T_1\) e \(T_2\)
+# Tempos $T_1$ e $T_2$
 
-## Tempo \(T_1\)
+## Tempo $T_1$
 
-O \(T_1\) é chamado de tempo de relaxamento.
+O $T_1$ é chamado de tempo de relaxamento.
 
-Ele mede quanto tempo um qubit no estado excitado \( |1\rangle \) leva para retornar naturalmente ao estado \( |0\rangle \).
+Ele mede quanto tempo um qubit no estado excitado $|1\rangle$ leva para retornar naturalmente ao estado $|0\rangle$.
 
 $$
 |1\rangle\longrightarrow|0\rangle
@@ -731,11 +730,11 @@ Esse processo representa uma perda de energia.
 
 ---
 
-## Tempo \(T_2\)
+## Tempo $T_2$
 
-O \(T_2\) está relacionado à perda de coerência de fase.
+O $T_2$ está relacionado à perda de coerência de fase.
 
-Um qubit pode ainda não ter retornado ao estado \( |0\rangle \), mas a relação de fase entre suas amplitudes pode ter sido degradada.
+Um qubit pode ainda não ter retornado ao estado $|0\rangle$, mas a relação de fase entre suas amplitudes pode ter sido degradada.
 
 Por exemplo, um estado como:
 
@@ -940,7 +939,7 @@ A mitigação de erros é diferente da correção de erros quânticos.
 
 ## Crescimento do estado quântico
 
-Para representar exatamente um estado puro de \(n\) qubits, são necessárias:
+Para representar exatamente um estado puro de $n$ qubits, são necessárias:
 
 $$
 2^n
@@ -952,11 +951,11 @@ Por exemplo:
 
 | Qubits | Quantidade de amplitudes |
 |:---:|:---:|
-| 10 | \(2^{10}=1024\) |
-| 20 | \(2^{20}=1.048.576\) |
-| 30 | \(2^{30}\) |
-| 50 | \(2^{50}\) |
-| \(n\) | \(2^n\) |
+| 10 | $2^{10}=1024$ |
+| 20 | $2^{20}=1.048.576$ |
+| 30 | $2^{30}$ |
+| 50 | $2^{50}$ |
+| $n$ | $2^n$ |
 
 Esse crescimento dificulta a simulação clássica de sistemas quânticos grandes.
 
@@ -1063,33 +1062,33 @@ $$
 
 ### Primeira CNOT
 
-Controle em \(q_0\) e alvo em \(q_1\):
+Controle em $q_0$ e alvo em $q_1$:
 
 $$
 |10\rangle\rightarrow|11\rangle
 $$
 
-Como o controle é \(1\), o alvo é invertido.
+Como o controle é $1$, o alvo é invertido.
 
 ### Segunda CNOT
 
-Controle em \(q_1\) e alvo em \(q_0\):
+Controle em $q_1$ e alvo em $q_0$:
 
 $$
 |11\rangle\rightarrow|01\rangle
 $$
 
-Como o controle é \(1\), o alvo é invertido.
+Como o controle é $1$, o alvo é invertido.
 
 ### Terceira CNOT
 
-Controle em \(q_0\) e alvo em \(q_1\):
+Controle em $q_0$ e alvo em $q_1$:
 
 $$
 |01\rangle\rightarrow|01\rangle
 $$
 
-Como o controle é \(0\), nada acontece.
+Como o controle é $0$, nada acontece.
 
 Portanto:
 
@@ -1177,7 +1176,7 @@ Em um simulador ideal, os resultados esperados são principalmente:
 11
 ```
 
-Cada um com aproximadamente \(50\%\) de probabilidade.
+Cada um com aproximadamente $50\%$ de probabilidade.
 
 ---
 
@@ -1185,15 +1184,15 @@ Cada um com aproximadamente \(50\%\) de probabilidade.
 
 | Porta | Quantidade de qubits | Função principal |
 |:---:|:---:|---|
-| \(X\) | 1 | Troca \( |0\rangle \) e \( |1\rangle \) |
-| \(Y\) | 1 | Troca o estado e modifica a fase |
-| \(Z\) | 1 | Modifica a fase |
-| \(H\) | 1 | Cria superposição |
-| \(S\) | 1 | Rotação de fase de \(90^\circ\) |
-| \(T\) | 1 | Rotação de fase de \(45^\circ\) |
-| \(CX\) | 2 | Inverte o alvo de acordo com o controle |
-| \(CZ\) | 2 | Altera a fase do estado \( |11\rangle \) |
-| \(SWAP\) | 2 | Troca os estados de dois qubits |
+| $X$ | 1 | Troca $|0\rangle$ e $|1\rangle$ |
+| $Y$ | 1 | Troca o estado e modifica a fase |
+| $Z$ | 1 | Modifica a fase |
+| $H$ | 1 | Cria superposição |
+| $S$ | 1 | Rotação de fase de $90^\circ$ |
+| $T$ | 1 | Rotação de fase de $45^\circ$ |
+| $CX$ | 2 | Inverte o alvo de acordo com o controle |
+| $CZ$ | 2 | Altera a fase do estado $|11\rangle$ |
+| $SWAP$ | 2 | Troca os estados de dois qubits |
 
 ---
 
