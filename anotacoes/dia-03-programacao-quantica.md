@@ -97,19 +97,13 @@ No equador, os estados possuem probabilidades iguais de medição na base comput
 Um estado puro de um qubit pode ser escrito como:
 
 $$
-|\psi\rangle
-=
-\cos\left(\frac{\theta}{2}\right)|0\rangle
-+
-e^{i\phi}
-\sin\left(\frac{\theta}{2}\right)|1\rangle
-
+|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi} \sin\left(\frac{\theta}{2}\right)|1\rangle
 $$
 
 Os ângulos funcionam como coordenadas geográficas:
 
-- $\theta$ indica a posição entre os polos norte e sul;
-- $\phi$ indica a posição ao redor do eixo vertical e representa a fase relativa.
+* $\theta$ indica a posição entre os polos norte e sul;
+* $\phi$ indica a posição ao redor do eixo vertical e representa a fase relativa.
 
 Assim, $\theta$ pode ser comparado à latitude e $\phi$ à longitude.
 
@@ -120,20 +114,15 @@ Assim, $\theta$ pode ser comparado à latitude e $\phi$ à longitude.
 A probabilidade de medir $0$ é:
 
 $$
-P(0)
-=
-\cos^2\left(\frac{\theta}{2}\right)
-
+P(0) = \cos^2\left(\frac{\theta}{2}\right)
 $$
 
 A probabilidade de medir $1$ é:
 
 $$
-P(1)
-=
-\sin^2\left(\frac{\theta}{2}\right)
-
+P(1) = \sin^2\left(\frac{\theta}{2}\right)
 $$
+
 
 O ângulo $\phi$ não altera imediatamente essas probabilidades quando medimos na base computacional.
 
