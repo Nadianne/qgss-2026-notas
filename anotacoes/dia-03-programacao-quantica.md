@@ -999,10 +999,7 @@ qc.draw("mpl")
 
 Esse circuito prepara o estado:
 
-$$
-\frac{|00\rangle+|11\rangle}{\sqrt{2}}
-
-$$
+$$\frac{\vert{}00\rangle+\vert{}11\rangle}{\sqrt{2}}$$
 
 Em um simulador ideal, os resultados esperados são principalmente:
 
@@ -1039,10 +1036,7 @@ As portas de um qubit podem ser visualizadas como rotações na Esfera de Bloch,
 
 Um conjunto universal, como:
 
-$$
-\{H,T,CX\}
-
-$$
+$$\{H, T, CX\}$$
 
 permite construir operações quânticas arbitrárias.
 
