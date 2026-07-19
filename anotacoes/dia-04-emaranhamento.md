@@ -46,7 +46,12 @@ Neste quarto dia, compreendi que:
   >
 </p>
 
-_Preparação do estado de Bell $|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$, utilizando uma porta Hadamard seguida de uma CNOT._
+<p align="center">
+  <em>
+    Preparação do estado de Bell Phi mais, utilizando uma porta
+    Hadamard seguida de uma CNOT.
+  </em>
+</p>
 
 O emaranhamento ocorre quando dois ou mais sistemas são descritos por um único estado quântico conjunto que não pode ser separado em estados individuais independentes.
 
