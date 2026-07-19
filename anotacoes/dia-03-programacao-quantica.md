@@ -64,23 +64,16 @@ Um bit clássico pode assumir apenas dois valores: **0 ou 1**.
 Um qubit pode estar em uma superposição:
 
 $$
-|\psi\rangle
-=
-\alpha|0\rangle
-+
-\beta|1\rangle
-
+|\psi\rangle = \alpha|0\rangle + \beta|1\rangle
 $$
 
 com:
 
 $$
-|\alpha|^2+|\beta|^2=1
-
+|\alpha|^2 + |\beta|^2 = 1
 $$
 
 A esfera funciona como um mapa tridimensional do estado do qubit.
-
 ---
 
 ## Polos da esfera
