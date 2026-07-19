@@ -55,8 +55,8 @@ Aqui estão organizados:
 ### Anotações
 
 - [Dia 1 — Introdução à computação quântica](anotacoes/dia-01-introducao.md) 
-- [Dia 2 —  Mecânica quântica](anotacoes/dia-02-mecanica-quantica.md)
-- Dia 3 — Programação quântica
+- [Dia 2 — Mecânica quântica](anotacoes/dia-02-mecanica-quantica.md)
+- [Dia 3 — Programação quântica](anotacoes/dia-03-programacao-quantica.md)
 - Dia 4 — Emaranhamento
 - Dia 5 — Ruído e hardware
 - Dia 6 — Quantum + HPC
@@ -71,10 +71,5 @@ Aqui estão organizados:
 - Lab 2
 - Lab 3
 - Lab 4
-### Workshops
 
-- Workshop 1 — Why Does Quantum Computing Seem Scary?
-- Workshop 2 — How to Use GitHub
-- Workshop 3 — How to Read an Academic Paper
-- Workshop 4 — From Coffees to Contracts: How to Network
 
