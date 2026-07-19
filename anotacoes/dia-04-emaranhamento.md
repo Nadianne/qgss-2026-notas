@@ -38,6 +38,23 @@ Neste quarto dia, compreendi que:
 ---
 # O que é emaranhamento quântico?
 
+<p align="center">
+  <img
+    src="../assets/imagens/estado-bell-phi-mais.png"
+    alt="Circuito de preparação do estado de Bell Phi mais"
+    width="500"
+  >
+</p>
+
+<p align="center">
+  <em>
+    Preparação do estado de Bell
+    $|\Phi^+\rangle =
+    \frac{|00\rangle+|11\rangle}{\sqrt{2}}$,
+    utilizando uma porta Hadamard seguida de uma CNOT.
+  </em>
+</p>
+
 O emaranhamento ocorre quando dois ou mais sistemas são descritos por um único estado quântico conjunto que não pode ser separado em estados individuais independentes.
 
 Um estado separável pode ser escrito como:
@@ -331,7 +348,23 @@ $$O(\sqrt{N})$$
 ---
 
 # Teletransporte quântico
+<p align="center">
+  <img
+    src="../assets/imagens/teletransporte-quasi-bell.png"
+    alt="Protocolo de teletransporte quântico utilizando estados quasi-Bell"
+    width="430"
+  >
+</p>
 
+<p align="center">
+  <em>
+    Representação de um protocolo de teletransporte quântico utilizando
+    estados quasi-Bell. Alice realiza uma medição na base de Bell e envia
+    o resultado clássico para Bob, que aplica uma operação unitária para
+    reconstruir o estado recebido.
+    Fonte: Aremua e Gouba (2024).
+  </em>
+</p>
 O teletransporte quântico transfere o estado de um qubit para outro qubit distante.
 
 Ele não transporta:
