@@ -65,11 +65,14 @@ Aqui estão organizados:
 - Dia 9 — Otimização
 - Dia 10 — Encerramento
 
-### Laboratórios
+### Laboratórios (em breve)
 
 - Lab 1
 - Lab 2
 - Lab 3
 - Lab 4
+<<<<<<< HEAD
 
+=======
+>>>>>>> f313d36a80d5b2c2d43a0a05489a402ddba2122a
 
