@@ -49,8 +49,7 @@ Neste quarto dia, compreendi que:
 <p align="center">
   <em>
     Preparação do estado de Bell
-    $|\Phi^+\rangle =
-    \frac{|00\rangle+|11\rangle}{\sqrt{2}}$,
+    $|\Phi^+\rangle = \frac{|00\rangle+|11\rangle}{\sqrt{2}}$,
     utilizando uma porta Hadamard seguida de uma CNOT.
   </em>
 </p>
@@ -468,11 +467,7 @@ Antes de receber os bits clássicos, Bob não sabe qual correção aplicar.
 
 Seu qubit parece maximamente misto:
 
-$$
-\rho_B
-=
-\frac{I}{2}
-$$
+$$\rho_B=\frac{I}{2}$$
 
 As estatísticas locais de Bob permanecem aleatórias.
 
