@@ -65,7 +65,7 @@ Um bit clássico pode assumir apenas dois valores:
 ```text
 0 ou 1
 ```
-
+---
 Um qubit pode estar em uma superposição:
 
 $$
