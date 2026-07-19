@@ -293,7 +293,7 @@ Ela realiza uma rotação de fase de $90^\circ$ (ou $\frac{\pi}{2}$).
 
 Ela deixa $|0\rangle$ inalterado e multiplica o componente $|1\rangle$ por $i$.
 
-Também vale:[cite: 1]
+Também vale:
 
 $$
 S^2 = Z
@@ -303,15 +303,15 @@ $$
 
 ## Porta T
 
-A porta $T$ é:[cite: 1]
+A porta $T$ é:
 
 $$
 T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix}
 $$
 
-Ela realiza uma rotação de fase de $45^\circ$ (ou $\frac{\pi}{4}$)[cite: 1].
+Ela realiza uma rotação de fase de $45^\circ$ (ou $\frac{\pi}{4}$).
 
-A porta $T$ é importante porque não pertence ao grupo de Clifford[cite: 1].
+A porta $T$ é importante porque não pertence ao grupo de Clifford.
 
 ---
 
@@ -534,15 +534,15 @@ Portanto, para obter computação quântica universal, é necessário adicionar 
 
 A porta $T$ é uma operação não-Clifford.
 
-Ao combinar as portas $H$, $T$ e $CX$, obtemos um conjunto universal[cite: 1]:
+Ao combinar as portas $H$, $T$ e $CX$, obtemos um conjunto universal:
 
 $$\{H, T, CX\}$$
 
 Assim:
 
-- $H$, $S$ e $CX$ são Clifford[cite: 1];
-- $T$ é não-Clifford[cite: 1];
-- a inclusão da porta $T$ permite construir circuitos universais[cite: 1].
+- $H$, $S$ e $CX$ são Clifford;
+- $T$ é não-Clifford;
+- a inclusão da porta $T$ permite construir circuitos universais.
 ---
 
 ## Custo das portas T
@@ -605,13 +605,13 @@ Esse processo representa uma perda de energia.
 
 O $T_2$ está relacionado à perda de coerência de fase.
 
-Um qubit pode ainda não ter retornado ao estado $|0\rangle$, mas a relação de fase entre suas amplitudes pode ter sido degradada[cite: 1].
+Um qubit pode ainda não ter retornado ao estado $|0\rangle$, mas a relação de fase entre suas amplitudes pode ter sido degradada.
 
 Por exemplo, um estado como:
 
 $$\frac{|0\rangle+|1\rangle}{\sqrt{2}}$$
 
-pode deixar de produzir interferência corretamente[cite: 1].
+pode deixar de produzir interferência corretamente.
 
 Em geral:
 
@@ -878,11 +878,11 @@ $$|10\rangle \longrightarrow |01\rangle$$
 
 ## Decomposição em portas CNOT
 
-Uma porta SWAP pode ser construída utilizando três portas CNOT[cite: 1]:
+Uma porta SWAP pode ser construída utilizando três portas CNOT:
 
 $$SWAP(a,b) = CX(a,b)CX(b,a)CX(a,b)$$
 
-A sequência é[cite: 1]:
+A sequência é:
 
 ```text
 CX do primeiro para o segundo
@@ -892,32 +892,29 @@ CX do primeiro para o segundo
 ---
 ## Exemplo passo a passo
 
-Considere[cite: 1]:
+Considere:
 
 $$q_0=|1\rangle$$
 
 $$q_1=|0\rangle$$
 
-O estado inicial é[cite: 1]:
+O estado inicial é:
 
 $$|10\rangle$$
 
 ### Primeira CNOT
 
-Controle em $q_0$ e alvo em $q_1$[cite: 1]:
+Controle em $q_0$ e alvo em $q_1$:
 
 $$|10\rangle \rightarrow |11\rangle$$
 
-Como o controle é $1$, o alvo é invertido[cite: 1].
+Como o controle é $1$, o alvo é invertido.
 
 ### Segunda CNOT
 
 Controle em $q_1$ e alvo em $q_0$:
 
-$$
-|11\rangle\rightarrow|01\rangle
-
-$$
+$$|11\rangle \rightarrow |01\rangle$$
 
 Como o controle é $1$, o alvo é invertido.
 
@@ -925,19 +922,13 @@ Como o controle é $1$, o alvo é invertido.
 
 Controle em $q_0$ e alvo em $q_1$:
 
-$$
-|01\rangle\rightarrow|01\rangle
-
-$$
+$$|01\rangle \rightarrow |01\rangle$$
 
 Como o controle é $0$, nada acontece.
 
 Portanto:
 
-$$
-|10\rangle\rightarrow|01\rangle
-
-$$
+$$|10\rangle \rightarrow |01\rangle$$
 
 Os estados dos qubits foram trocados.
 
