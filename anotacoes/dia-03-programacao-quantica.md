@@ -286,14 +286,14 @@ A Hadamard é frequentemente utilizada para criar uma superposição equilibrada
 A porta $S$ é:
 
 $$
-S = \begin{pmatrix 1 & 0 \\ 0 & i \end{pmatrix}
+S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
 Ela realiza uma rotação de fase de $90^\circ$ (ou $\frac{\pi}{2}$).
 
 Ela deixa $|0\rangle$ inalterado e multiplica o componente $|1\rangle$ por $i$.
 
-Também vale:
+Também vale:[cite: 1]
 
 $$
 S^2 = Z
@@ -303,15 +303,15 @@ $$
 
 ## Porta T
 
-A porta $T$ é:
+A porta $T$ é:[cite: 1]
 
 $$
-T = \begin{pmatrix 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix}
+T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix}
 $$
 
-Ela realiza uma rotação de fase de $45^\circ$ (ou $\frac{\pi}{4}$).
+Ela realiza uma rotação de fase de $45^\circ$ (ou $\frac{\pi}{4}$)[cite: 1].
 
-A porta $T$ é importante porque não pertence ao grupo de Clifford.
+A porta $T$ é importante porque não pertence ao grupo de Clifford[cite: 1].
 
 ---
 
