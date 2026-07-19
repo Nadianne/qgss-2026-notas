@@ -170,24 +170,17 @@ Matematicamente, cada porta é representada por uma matriz unitária.
 A porta Pauli-X é:
 
 $$
-X=
-\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix}
-
+X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
 $$
 
 Ela troca os estados da base computacional:
 
 $$
-X|0\rangle=|1\rangle
-
+X|0\rangle = |1\rangle
 $$
 
 $$
-X|1\rangle=|0\rangle
-
+X|1\rangle = |0\rangle
 $$
 
 Na Esfera de Bloch, corresponde a uma rotação de $180^\circ$ em torno do eixo $X$.
@@ -201,26 +194,19 @@ Ela é semelhante à porta NOT da computação clássica.
 A porta Pauli-Z é:
 
 $$
-Z=
-\begin{pmatrix}
-1 & 0 \\
-0 & -1
-\end{pmatrix}
-
+Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
 
 Ela mantém $|0\rangle$ inalterado:
 
 $$
-Z|0\rangle=|0\rangle
-
+Z|0\rangle = |0\rangle
 $$
 
 E altera o sinal do estado $|1\rangle$:
 
 $$
-Z|1\rangle=-|1\rangle
-
+Z|1\rangle = -|1\rangle
 $$
 
 A porta $Z$ não troca diretamente as probabilidades de medir $0$ ou $1$.
@@ -230,8 +216,7 @@ Ela modifica a fase relativa do estado.
 Por exemplo:
 
 $$
-Z|+\rangle=|-\rangle
-
+Z|+\rangle = |-\rangle
 $$
 
 Na Esfera de Bloch, ela representa uma rotação de $180^\circ$ em torno do eixo $Z$.
@@ -243,24 +228,17 @@ Na Esfera de Bloch, ela representa uma rotação de $180^\circ$ em torno do eixo
 A porta Pauli-Y é:
 
 $$
-Y=
-\begin{pmatrix}
-0 & -i \\
-i & 0
-\end{pmatrix}
-
+Y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
 $$
 
 Ela atua como:
 
 $$
-Y|0\rangle=i|1\rangle
-
+Y|0\rangle = i|1\rangle
 $$
 
 $$
-Y|1\rangle=-i|0\rangle
-
+Y|1\rangle = -i|0\rangle
 $$
 
 A porta $Y$ altera tanto o estado da base computacional quanto a fase.
@@ -274,47 +252,29 @@ Na Esfera de Bloch, corresponde a uma rotação de $180^\circ$ em torno do eixo 
 A porta Hadamard é:
 
 $$
-H=
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}
-1 & 1 \\
-1 & -1
-\end{pmatrix}
-
+H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
 $$
 
 Aplicada ao estado $|0\rangle$:
 
 $$
-H|0\rangle
-=
-\frac{|0\rangle+|1\rangle}{\sqrt{2}}
-=
-|+\rangle
-
+H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 $$
 
 Aplicada ao estado $|1\rangle$:
 
 $$
-H|1\rangle
-=
-\frac{|0\rangle-|1\rangle}{\sqrt{2}}
-=
-|-\rangle
-
+H|1\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}} = |-\rangle
 $$
 
 Nos dois casos, as probabilidades de medição são:
 
 $$
-P(0)=\frac{1}{2}
-
+P(0) = \frac{1}{2}
 $$
 
 $$
-P(1)=\frac{1}{2}
-
+P(1) = \frac{1}{2}
 $$
 
 A Hadamard é frequentemente utilizada para criar uma superposição equilibrada.
@@ -326,35 +286,17 @@ A Hadamard é frequentemente utilizada para criar uma superposição equilibrada
 A porta $S$ é:
 
 $$
-S=
-\begin{pmatrix}
-1 & 0 \\
-0 & i
-\end{pmatrix}
-
+S = \begin{pmatrix 1 & 0 \\ 0 & i \end{pmatrix}
 $$
 
-Ela realiza uma rotação de fase de:
-
-$$
-90^\circ
-
-$$
-
-ou:
-
-$$
-\frac{\pi}{2}
-
-$$
+Ela realiza uma rotação de fase de $90^\circ$ (ou $\frac{\pi}{2}$).
 
 Ela deixa $|0\rangle$ inalterado e multiplica o componente $|1\rangle$ por $i$.
 
 Também vale:
 
 $$
-S^2=Z
-
+S^2 = Z
 $$
 
 ---
@@ -364,27 +306,10 @@ $$
 A porta $T$ é:
 
 $$
-T=
-\begin{pmatrix}
-1 & 0 \\
-0 & e^{i\pi/4}
-\end{pmatrix}
-
+T = \begin{pmatrix 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix}
 $$
 
-Ela realiza uma rotação de fase de:
-
-$$
-45^\circ
-
-$$
-
-ou:
-
-$$
-\frac{\pi}{4}
-
-$$
+Ela realiza uma rotação de fase de $45^\circ$ (ou $\frac{\pi}{4}$).
 
 A porta $T$ é importante porque não pertence ao grupo de Clifford.
 
