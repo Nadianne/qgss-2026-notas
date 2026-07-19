@@ -605,23 +605,17 @@ Esse processo representa uma perda de energia.
 
 O $T_2$ está relacionado à perda de coerência de fase.
 
-Um qubit pode ainda não ter retornado ao estado $|0\rangle$, mas a relação de fase entre suas amplitudes pode ter sido degradada.
+Um qubit pode ainda não ter retornado ao estado $|0\rangle$, mas a relação de fase entre suas amplitudes pode ter sido degradada[cite: 1].
 
 Por exemplo, um estado como:
 
-$$
-\frac{|0\rangle+|1\rangle}{\sqrt{2}}
+$$\frac{|0\rangle+|1\rangle}{\sqrt{2}}$$
 
-$$
-
-pode deixar de produzir interferência corretamente.
+pode deixar de produzir interferência corretamente[cite: 1].
 
 Em geral:
 
-$$
-T_2\leq2T_1
-
-$$
+$$T_2 \leq 2T_1$$
 
 ---
 
@@ -814,10 +808,7 @@ A mitigação de erros é diferente da correção de erros quânticos.
 
 Para representar exatamente um estado puro de $n$ qubits, são necessárias:
 
-$$
-2^n
-
-$$
+$$2^n$$
 
 amplitudes complexas.
 
@@ -869,7 +860,6 @@ Circuitos muito profundos ainda são difíceis de executar no hardware quântico
 A região intermediária pode apresentar oportunidades para utilidade quântica.
 
 ---
-
 # Porta SWAP
 
 ## O que é a SWAP?
@@ -878,78 +868,46 @@ A porta SWAP troca os estados de dois qubits.
 
 De forma geral:
 
-$$
-|a\rangle|b\rangle
-\longrightarrow
-|b\rangle|a\rangle
-
-$$
+$$|a\rangle|b\rangle \longrightarrow |b\rangle|a\rangle$$
 
 Por exemplo:
 
-$$
-|10\rangle
-\longrightarrow
-|01\rangle
-
-$$
+$$|10\rangle \longrightarrow |01\rangle$$
 
 ---
 
 ## Decomposição em portas CNOT
 
-Uma porta SWAP pode ser construída utilizando três portas CNOT:
+Uma porta SWAP pode ser construída utilizando três portas CNOT[cite: 1]:
 
-$$
-SWAP(a,b)
-=
-CX(a,b)
-CX(b,a)
-CX(a,b)
+$$SWAP(a,b) = CX(a,b)CX(b,a)CX(a,b)$$
 
-$$
-
-A sequência é:
+A sequência é[cite: 1]:
 
 ```text
 CX do primeiro para o segundo
 CX do segundo para o primeiro
 CX do primeiro para o segundo
-```
-
 ---
-
 ## Exemplo passo a passo
 
-Considere:
+Considere[cite: 1]:
 
-$$
-q_0=|1\rangle
+$$q_0=|1\rangle$$
 
-$$
+$$q_1=|0\rangle$$
 
-$$
-q_1=|0\rangle
+O estado inicial é[cite: 1]:
 
-$$
-
-O estado inicial é:
-
-$$
-|10\rangle
-
-$$
+$$|10\rangle$$
 
 ### Primeira CNOT
 
-Controle em $q_0$ e alvo em $q_1$:
+Controle em $q_0$ e alvo em $q_1$[cite: 1]:
 
-$$
-|10\rangle\rightarrow|11\rangle
+$$|10\rangle \rightarrow |11\rangle$$
 
-$$
-
-Como o controle é $1$, o alvo é invertido.
+Como o controle é $1$, o alvo é invertido[cite: 1].
 
 ### Segunda CNOT
 
